@@ -1,7 +1,8 @@
 pipe : (a -> b) -> (b -> c) -> a -> c
-pipe f g x = g (f x)
+-- pipe f g x = g (f x)
+pipe f g x = ?pipe_rhs
 
-pipeAll : List -> a -> z
+-- pipeAll : List -> a -> z
 
 
 
