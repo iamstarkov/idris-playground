@@ -1,3 +1,5 @@
+import Data.Vect
+
 invert : Bool -> Bool
 invert True = False
 invert False = True
@@ -13,3 +15,6 @@ describeList (x :: xs) = "Non empty, Tail: " ++ show xs
 isEven : Nat -> Bool
 isEven Z = True
 isEven (S k) = not (isEven k)
+
+my_length : Vect n elem -> Nat
+my_length {n} xs = n
